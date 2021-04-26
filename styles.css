@@ -1,0 +1,49 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Inter;
+    background: #040932;
+    color: white;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.header {
+    width: 100%;
+    height: 100px;
+    background: #0f1243;
+    text-align: center;
+    padding: 5px;
+    box-shadow: 0px 0px 3px black;
+}
+
+.content {
+    margin-top: 15px;
+    display: flex;
+    vertical-align: middle;
+    justify-content: center;
+}
+
+.content .box-case {
+    width: 200px;
+    padding: 10px;
+    background: #0f1243;
+    border-radius: 5px;
+    margin-right: 15px;
+}
+
+.content .box-case div {
+    font-weight: bold;
+    font-size: 45px;
+}
+
+.content .box-case div.icons {
+    width: 60px;
+    height: 60px;
+    border-radius: 5px;
+    font-size: 25px;
+    color: #040932;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
