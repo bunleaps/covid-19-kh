@@ -1,8 +1,15 @@
+if ('serviceWorker' in navigator) {
+    window.addEventListener('load', () => {
+        navigator.serviceWorker
+            .register('sw.js')
+            .then(reg => console.log("Service Worker: Registered"))
+            .catch(err => console.log(`Service Worker: Error: ${err}`))
+    })
+}
+
 $.getJSON("https://corona.lmao.ninja/v3/covid-19/countries/cambodia", function (
     data
 ) {
-
-    console.log(data)
     $("#total-case").append(data.cases);
     $("#active-case").append(data.active);
     $("#deaths").append(data.deaths);
